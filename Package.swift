@@ -45,7 +45,7 @@ let package = Package(
                 .unsafeFlags(["-Wno-shorten-64-to-32", "-O3", "-DNDEBUG"]),
                 .unsafeFlags(["-fno-objc-arc"]),
                 .define("GGML_USE_ACCELERATE"),
-                .define("WHISPER_USE_COREML")
+                .define("WHISPER_USE_COREML", to: "1"),
                 // .define("ACCELERATE_NEW_LAPACK"),
                 // .define("ACCELERATE_LAPACK_ILP64")
             ],
